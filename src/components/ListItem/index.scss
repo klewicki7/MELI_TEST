@@ -1,0 +1,40 @@
+.article-card {
+  border-radius: 2px;
+  display: flex;
+  align-self: center;
+  width: 75%;
+  font-size: 16px;
+  padding: 20px 10px 20px 10px;
+  border-bottom: 0.5px solid #eeeeee;
+  background-color: #ffffff;
+}
+.img-card {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+.link-w {
+  text-decoration: none;
+  color: #333333;
+}
+.img-container {
+  width: 12em;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px 35px 0px 10px;
+}
+
+.city-container {
+  display: flex;
+}
+.details {
+}
+
+h2, h3 {
+  font-weight: 400;
+}

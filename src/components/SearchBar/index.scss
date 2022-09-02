@@ -1,0 +1,35 @@
+.navbar-search {
+  
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.search-container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+}
+.search-bar {
+  width: 90%;
+  height: 2.9em;
+  border-radius: 5px 0px 0px 5px;
+  border-width: 0px;
+  padding-left: 10px;
+  border: 0;
+  outline: none;
+}
+
+.btn-search {
+  height: 3em;
+  width: 10%;
+  border-radius: 0px 5px 5px 0px;
+  border-width: 0px;
+}
+.logo {
+  max-width: 4em;
+  max-height: 4em;
+  padding-right: 20px;
+}
