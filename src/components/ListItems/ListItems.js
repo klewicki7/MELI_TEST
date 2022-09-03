@@ -1,15 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ListItem from "../ListItem/ListItem";
 import "./index.scss";
+import ItemNotFound from "../NotFound/ItemNotFound";
+import RenderComponent from "../RenderComponentWithLoading/RenderComponent";
 
 function ListItems({ data }) {
   return (
     <main>
       <section className="list-container">
-        {data.results?.length > 0 ? (
-          data.results.map((e) => <ListItem item={e} />)
+        {data ? (
+          <RenderComponent isLoading={!data.results?.length > 0}>
+            {data.results?.map((e) => (
+              <ListItem item={e} />
+            ))}
+          </RenderComponent>
         ) : (
-          <h2>No se encontraron resultados.</h2>
+          <ItemNotFound />
         )}
       </section>
     </main>

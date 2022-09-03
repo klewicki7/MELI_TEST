@@ -1,36 +1,37 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetItemDetail } from "../../hooks/useGetItemDetail";
+import RenderComponent from "../../components/RenderComponentWithLoading/RenderComponent";
 import "./index.scss";
+import ImageDetails from "../../components/ImageDetails/ImageDetails";
 
 function Detail() {
   const { id } = useParams();
   const [detail, description] = useGetItemDetail(id);
 
   return (
-    <div className="section-container">
-      <section className="article-container">
-        <article className="detail-container bg-white">
-          <div className="image-container bg-white">
-            <img
-              className="image-detail bg-white"
-              src={detail.thumbnail}
-              alt={"photo"}
+    <div className="container-article">
+      <RenderComponent isLoading={!detail}>
+        <article className="container-card-detail bg-white ">
+          <div className="container-descripcion bg-white">
+            <ImageDetails
+              pictures={detail.pictures}
+              thumbnail={detail.thumbnail}
             />
+            <div className="bg-white descripcion-container">
+              <h2 className="bg-white">Descripcion del producto</h2>
+              <p className="bg-white">{description.plain_text}</p>
+            </div>
           </div>
-          <div className="text-detail-container bg-white">
-            <h2 className="bg-white mt-16">{detail.title}</h2>
-            <h2 className="bg-white mt-32 mb-32">ARS ${detail.price}</h2>
-            <button className="btn mr-32">Comprar</button>
+          <div className="bg-white container-title-card">
+            <h2 className="bg-white text-title">{detail.title}</h2>
+            <div className="bg-white container-price-btn">
+              <h2 className="bg-white text-price">$ {detail.price}</h2>
+              <button className="bg-white btn">Comprar</button>
+            </div>
           </div>
         </article>
-        <section className="description-container bg-white">
-          <h2 className="descripcion-text bg-white">
-            Descripcion del producto
-          </h2>
-          <p className="bg-white descipcion-p">{description.plain_text}</p>
-        </section>
-      </section>
+      </RenderComponent>
     </div>
   );
 }

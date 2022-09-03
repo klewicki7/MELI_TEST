@@ -6,8 +6,15 @@ function useGetItemSearch(query) {
   useEffect(() => {
     fetch(`/api/searchItem?q=${query}`)
       .then((data) => data.json())
-      .then((data) => setData(data));
+      .then((data) => {
+        if (data.results.length > 0) {
+          setData(data);
+        } else {
+          setData(false);
+        }
+      });
   }, [query]);
+
   return [data];
 }
 

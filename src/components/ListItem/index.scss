@@ -9,30 +9,34 @@
   background-color: #ffffff;
 }
 .img-card {
-  object-fit: contain;
-  width: 180px;
-  height: 180px;
+  object-fit: cover;
+  height: 200px;
   border-radius: 4px;
+
 }
 .link-w {
   text-decoration: none;
   color: #333333;
 }
 .img-container {
-  width: 12em;
+
+  width: 15%;
+  height: 100%;
+
 }
 
 .details-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0px 35px 0px 10px;
+  margin: 15px 35px 0px 10px;
 }
 
 .city-container {
-  display: flex;
+  width: 15%;
 }
 .details {
+  width: 90%;
 }
 
 h2, h3 {
