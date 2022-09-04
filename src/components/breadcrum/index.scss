@@ -1,0 +1,42 @@
+.breadcrum {
+  display: flex;
+  align-self: center;
+  width: 75%;
+  @media screen and (max-width: 915px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
+}
+
+.list-breadcrum {
+  gap: 3px;
+  display: flex;
+  margin: 15px 0px;
+  list-style: none;
+  text-align: center;
+  font-weight: 300;
+  @media screen and (max-width: 915px) {
+    font-size: 12px;
+    text-align: left;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
+}
+.list-breadcrum li:first-child::before {
+  content: "";
+}
+.list-breadcrum li::before {
+  content: ">";
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px 5px;
+}
+
+.list-breadcrum li a {
+  text-decoration: none;
+  color: #333333;
+}

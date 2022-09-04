@@ -7,7 +7,7 @@ function useGetItemSearch(query) {
     fetch(`/api/searchItem?q=${query}`)
       .then((data) => data.json())
       .then((data) => {
-        if (data.results.length > 0) {
+        if (data.items.length > 0) {
           setData(data);
         } else {
           setData(false);

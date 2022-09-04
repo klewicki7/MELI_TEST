@@ -1,17 +1,32 @@
 .navbar-search {
-  
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 915px) {
+    padding: 5px 10px 5px 10px;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
   padding: 5px;
+  width: 100%;
 }
 .search-container {
   width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 915px) {
+    width: 80% !important;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
 }
-.link {
+.search-icon {
+  font-size: 2em;
+  color: #999999;
 }
+
 .search-bar {
   width: 90%;
   height: 2.9em;
@@ -20,6 +35,13 @@
   padding-left: 10px;
   border: 0;
   outline: none;
+  //some CSS
+  @media screen and (max-width: 915px) {
+    width: 80% !important;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
 }
 
 .btn-search {
@@ -27,9 +49,22 @@
   width: 10%;
   border-radius: 0px 5px 5px 0px;
   border-width: 0px;
+  @media screen and (max-width: 915px) {
+    width: 20% !important;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
 }
 .logo {
   max-width: 4em;
   max-height: 4em;
   padding-right: 20px;
+  @media screen and (max-width: 915px) {
+    height: 100% !important;
+    object-fit: contain;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
 }

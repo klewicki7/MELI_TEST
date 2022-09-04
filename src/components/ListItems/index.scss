@@ -3,6 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  
+
+  @media screen and (max-width: 915px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 700px) {
+    //do Smth
+  }
 }
 
+
+
+/* .list-breadcrum li:first-child{
+    list-style-type: none;
+} */

@@ -16,14 +16,14 @@ function ListItem({ item }) {
       <section className="details-container bg-white">
         <div className="details bg-white">
           <Link className="link-w bg-white" to={`/items/${item.id}`}>
-            <h2 className="bg-white mb-32">
+            <h2 className="bg-white mb-32 title-text">
               {item.prices.prices[0].currency_id} {item.prices.prices[0].amount}
             </h2>
-            <h2 className="bg-white">{item.title}</h2>
+            <h2 className="bg-white title-text">{item.title}</h2>
           </Link>
         </div>
         <div className="city-container bg-white">
-          <h3 className="bg-white">
+          <h3 className="bg-white title-text">
             {item.address.state_name}
           </h3>
         </div>

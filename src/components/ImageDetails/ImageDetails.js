@@ -8,16 +8,17 @@ function ImageDetails({ pictures, thumbnail }) {
       <div className="preview-image bg-white">
         {pictures?.map((e) => (
           <img
+          key={e.id}
             onMouseEnter={() => setThumbHover(e.secure_url)}
             onMouseLeave={() => setThumbHover(thumbnail)}
             className="bg-white img-active"
             src={e.secure_url}
-            alt={"photo"}
+            alt={"imagen-preview"}
           />
         ))}
       </div>
       <div className="image-active">
-        <img className="bg-white" src={thumbHover} alt={"photo"} />
+        <img className="bg-white" src={thumbHover} alt={"imagen-product"} />
       </div>
     </div>
   );

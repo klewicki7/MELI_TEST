@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import {AiOutlineSearch} from "react-icons/ai";
 import "./index.scss";
 
 function SearchBar({ search, setSearch, onClick }) {
@@ -26,7 +27,7 @@ function SearchBar({ search, setSearch, onClick }) {
             onKeyDown={(e) => onKeyDown(e.key)}
           />
           <button disabled={search=== ''} onClick={() => onClick()} className="btn-search">
-            Search
+            <AiOutlineSearch  className="search-icon" />
           </button>
         </div>
       </nav>

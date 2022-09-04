@@ -1,21 +1,20 @@
 .not-found-container {
-    display: flex;
-    justify-content: center;
-    width: 35vw;
-    height: 16vh;
-    padding: 3vh;
-  
-  }
-  
-  .not-found-img-container {
-    margin-right: 50px;
-  }
-  
-  .ul-pasos {
-    margin: 10px 0px 0px 15px;
-    font-size: 20px;
-  }
-  .not-found-img-container img {
-    object-fit: contain;
-    height: 100px;
-  }
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 30vh;
+  padding: 3vh;
+}
+
+.not-found-img-container {
+  margin-right: 50px;
+}
+
+.ul-pasos {
+  margin: 10px 0px 0px 15px;
+  font-size: 20px;
+}
+.not-found-img-container img {
+  object-fit: contain;
+  height: 100px;
+}
