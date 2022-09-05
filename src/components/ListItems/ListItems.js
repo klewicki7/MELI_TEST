@@ -13,7 +13,7 @@ function ListItems({ data }) {
         {data ? (
           <RenderComponent isLoading={!data.items?.length > 0}>
             {data.items?.map((e) => (
-              <ListItem item={e} key={e.id} />
+              <ListItem item={e} breadcrum={data.categories} key={e.id} />
             ))}
           </RenderComponent>
         ) : (

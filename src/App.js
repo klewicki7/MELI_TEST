@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/items/search/:search" element={<List />} />
         <Route path="/items/:id" element={<Detail />} />
+        <Route path="/items/:id/:breadcrum" element={<Detail />} />
       </Routes>
     </React.Fragment>
   );

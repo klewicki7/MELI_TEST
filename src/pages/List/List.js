@@ -5,9 +5,7 @@ import { useGetItemSearch } from "../../hooks/useGetItemSearch";
 
 function List() {
   const { search } = useParams();
-
   const [data] = useGetItemSearch(search);
-
   return <ListItems data={data} />;
 }
 

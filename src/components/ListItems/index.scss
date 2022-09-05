@@ -1,20 +1,9 @@
 .list-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-
-  @media screen and (max-width: 915px) {
-    padding: 0;
-  }
-  @media screen and (min-width: 700px) {
-    //do Smth
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 915px) {
+        padding: 0;
+    }
 }
-
-
-
-/* .list-breadcrum li:first-child{
-    list-style-type: none;
-} */

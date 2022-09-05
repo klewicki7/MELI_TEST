@@ -7,11 +7,8 @@ function useGetItemSearch(query) {
     fetch(`/api/searchItem?q=${query}`)
       .then((data) => data.json())
       .then((data) => {
-        if (data.items.length > 0) {
-          setData(data);
-        } else {
-          setData(false);
-        }
+        if (data.items.length > 0) setData(data);
+        else setData(false);
       });
   }, [query]);
 

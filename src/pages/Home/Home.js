@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import "./index.scss";
+
 
 function Home() {
   const navigate = useNavigate();

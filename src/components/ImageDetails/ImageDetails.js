@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./index.scss";
 
 function ImageDetails({ pictures, thumbnail }) {
   const [thumbHover, setThumbHover] = useState(thumbnail);
@@ -8,7 +9,7 @@ function ImageDetails({ pictures, thumbnail }) {
       <div className="preview-image bg-white">
         {pictures?.map((e) => (
           <img
-          key={e.id}
+            key={e.id}
             onMouseEnter={() => setThumbHover(e.secure_url)}
             onMouseLeave={() => setThumbHover(thumbnail)}
             className="bg-white img-active"

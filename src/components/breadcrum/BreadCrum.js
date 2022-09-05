@@ -1,13 +1,17 @@
 import React from "react";
-import "./index.scss"
+import "./index.scss";
 
-function BreadCrum({categories}) {
+function BreadCrum({ categories }) {
+  if (typeof categories === "string") {
+    categories = categories.split(",");
+  }
+
   return (
     <section className="breadcrum">
       <ul className="list-breadcrum">
         {categories?.map((e) => (
           <li key={e}>
-            <a href="#">{e}</a>
+            <a className="breadcrum-a" href="#">{e}</a>
           </li>
         ))}
       </ul>
